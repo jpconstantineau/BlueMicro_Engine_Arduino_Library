@@ -1,10 +1,11 @@
 #include <Arduino.h>
 #include <bluemicro_engine.h>
 
+/* These should be part of the library and included as extern in the header file.
 commandlist_t commandList; 
 commandqueue_t setupQueue;
 commandqueue_t commandQueue;
-commandqueue_t loopQueue;
+commandqueue_t loopQueue;*/
 
 void setup() {
     // map of all possible commands
