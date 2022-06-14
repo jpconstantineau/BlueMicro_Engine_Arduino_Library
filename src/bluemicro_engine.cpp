@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: BSD-3-Clause
 
 #include "bluemicro_engine.h"
+#include "std_fix.h"
 
 commandlist_t commandList; 
 commandqueue_t setupQueue;

@@ -9,7 +9,7 @@
 #include <vector>
 #include <utility>
 #include <algorithm>
-#include "std_fix.h"
+
 
 typedef uint16_t extended_keycodes_t;
 typedef void (*run_command_cb_t)(extended_keycodes_t key);
