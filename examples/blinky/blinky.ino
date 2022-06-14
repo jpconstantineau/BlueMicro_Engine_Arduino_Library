@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include <Adafruit_TinyUSB.h> // for Serial
 #include <bluemicro_engine.h>
 
 /* These should be part of the library and included as extern in the header file.
