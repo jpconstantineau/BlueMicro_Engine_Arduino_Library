@@ -16,7 +16,7 @@ void processing_loop(uint32_t interval) {
   static uint32_t last_timestamp = 0;
   RUNCOMMANDS(loopQueue, commandList);   
   uint32_t end_timestamp = millis();
-  uint32_t diff = (last_timestamp + interval > end_timestamp) ? last_timestamp + HIDREPORTINGINTERVAL - end_timestamp:1;
+  uint32_t diff = (last_timestamp + interval > end_timestamp) ? last_timestamp + interval - end_timestamp:1;
   last_timestamp = end_timestamp;
   delay(diff); 
 }
