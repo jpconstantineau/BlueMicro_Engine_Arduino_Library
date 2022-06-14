@@ -1,10 +1,14 @@
 # Syntax Coloring Map For BlueMicro_HID Library
 
 # Datatypes (KEYWORD1)
-Test    KEYWORD1
+commandlist_t    KEYWORD1
+commandqueue_t    KEYWORD1
 
 # Methods and Functions (KEYWORD2)
-doSomething KEYWORD2
+SETUPCOMMAND KEYWORD2
+ADDCOMMAND   KEYWORD2
+run_setup_commands  KEYWORD2
+processing_loop  KEYWORD2
 
 # Instances (KEYWORD2)
 
