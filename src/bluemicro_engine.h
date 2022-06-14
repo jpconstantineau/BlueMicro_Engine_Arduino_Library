@@ -4,7 +4,7 @@
 
 #ifndef ENGINE_H
 #define ENGINE_H
-
+#include <Arduino.h>
 #include <stdint.h>
 #include <vector>
 #include <utility>
