@@ -20,6 +20,7 @@ typedef std::vector <extended_keycodes_t> commandqueue_t;
 typedef std::vector <extended_keycodes_t> keymap_t;
 
 bool command_less (command_t i,command_t j);
+void processing_loop(uint32_t interval);
 
 #define COMMANDID(COMMAND) (((extended_keycodes_t) COMMAND << 8 ) | 0xAF ) 
 #define SETUPCOMMAND(LIST, KEY, COMMAND) {LIST.push_back(std::make_pair(KEY,[](extended_keycodes_t i){ COMMAND;} ));}
