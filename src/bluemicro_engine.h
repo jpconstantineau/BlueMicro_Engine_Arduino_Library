@@ -19,7 +19,13 @@ typedef std::vector <extended_keycodes_t> commandqueue_t;
 
 typedef std::vector <extended_keycodes_t> keymap_t;
 
+extern commandlist_t commandList; 
+extern commandqueue_t setupQueue;
+extern commandqueue_t commandQueue;
+extern commandqueue_t loopQueue;
+
 bool command_less (command_t i,command_t j);
+void run_setup_commands(void);
 void processing_loop(uint32_t interval);
 
 #define COMMANDID(COMMAND) (((extended_keycodes_t) COMMAND << 8 ) | 0xAF ) 
